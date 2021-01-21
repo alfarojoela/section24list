@@ -24,6 +24,7 @@ const statPromises = filenames.map(filename => {
 
 const allStats = await Promise.all(statPromises);
 
+//LOOP
 for (let stats of allStats) {
     const index = allStats.indexOf(stats);
 
